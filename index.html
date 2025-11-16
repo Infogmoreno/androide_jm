@@ -16,7 +16,7 @@
      webxr="requiredFeatures: hit-test,local-floor;
                 optionalFeatures: dom-overlay,unbounded;
                 overlayElement: #overlay;"
-    ar-hit-test="target:#robot;"            
+    ar-hit-test="target:#parentrobot;"            
     xr-mode-ui="XRMode: ar;">
         <a-assets>
             <a-asset-item id="model" 
@@ -24,7 +24,9 @@
             </a-asset-item>
         </a-assets>
 
-        <a-entity id="parentrobot" position="0 -1.65 0>
+        <a-entity id="parentrobot" 
+        position="0 -1.65 0
+        scale="1.2 1.2 1.2>
             <a-entity id="robot"         
             gltf-model="#model"
             position="0 0 -0.1" 
@@ -53,6 +55,7 @@
 </html>
 
             
+
 
 
 
