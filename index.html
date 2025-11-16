@@ -16,6 +16,7 @@
      webxr="requiredFeatures: hit-test,local-floor;
                 optionalFeatures: dom-overlay,unbounded;
                 overlayElement: #overlay;"
+    ar-hit-test="target:#robot;"            
     xr-mode-ui="XRMode: ar;">
         <a-assets>
             <a-asset-item id="model" 
@@ -24,7 +25,8 @@
         </a-assets>
 
         <a-entity id="robot"         
-        gltf-model="#model" 
+        gltf-model="#model"
+        position="0 0 -0.1" 
         animation-mixer>
         </a-entity>
 
@@ -38,10 +40,9 @@
         position="0 0 0">
         </a-entity>
 
-        
+        <a-sky color="rgba(20,25,30)"></a-sky>
 
     </a-scene>
 </body>
 </html>
-
             
