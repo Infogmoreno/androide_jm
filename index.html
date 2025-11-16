@@ -24,12 +24,13 @@
             </a-asset-item>
         </a-assets>
 
-        <a-entity id="robot"         
-        gltf-model="#model"
-        position="0 0 -0.1" 
-        animation-mixer>
+        <a-entity id="parentrobot" position="0 -1.65 0>
+            <a-entity id="robot"         
+            gltf-model="#model"
+            position="0 0 -0.1" 
+            animation-mixer>
+            </a-entity>
         </a-entity>
-
         <a-entity id="camara"
         camera  
         position="0 1.65 0">            
@@ -52,6 +53,7 @@
 </html>
 
             
+
 
 
 
